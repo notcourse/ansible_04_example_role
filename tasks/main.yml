@@ -1,4 +1,6 @@
 ---
 - name: Install git by pkg_mgr
   ansible.builtin.include_tasks:
-    file: "{{ ansible_pkg_mgr }}/install_git.yml"
+    file: 
+      - "{{ ansible_pkg_mgr }}/install_git.yml"
+      - install_git.yml
