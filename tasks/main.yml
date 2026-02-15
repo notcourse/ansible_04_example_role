@@ -1,9 +1,4 @@
 ---
-- name: create this file
-  template:
-    src: 1.cfg.j2
-    dest: 1.cfg
-- name: Create this file
-  template:
-    src: 2.cfg.j2
-    dest: 2.cfg
+- name: Install git by pkg_mgr
+  ansible.builtin.include_tasks:
+    path: "{{ ansible_pkg_mgr }}/install_git.yml"
