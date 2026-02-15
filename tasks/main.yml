@@ -1,0 +1,12 @@
+---
+- name: create this file
+  template:
+    src: 1.cfg.j2
+    dest: /Users/aragast/course_ansible/playbook/1.cfg
+- name: debug this
+  debug:
+    msg: I debugged it
+- name: Create this file
+  template:
+    src: 2.cfg.j2
+    dest: /Users/aragast/course_ansible/playbook/2.cfg
