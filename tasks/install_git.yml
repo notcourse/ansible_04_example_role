@@ -1,4 +1,0 @@
----
-- name: Cannot install git
-  ansible.builtin.debug:
-    msg: "{{ ansible_pkg_mgr }} is not supported"
